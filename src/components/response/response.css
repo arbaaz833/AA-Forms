@@ -1,0 +1,80 @@
+.resDiv {
+  background-color: var(--formbg);
+  padding: 20px;
+  margin: auto;
+  margin-left: 32vw;
+  margin-top: 7vh;
+  width: 50%;
+  min-width: 400px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.resQuestion {
+  background-color: #ffffff;
+  padding: 15px;
+  color: black;
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+
+.responsesNum {
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.dates {
+  margin: 0px 5px;
+  padding: 5px;
+  background-color: rgba(218, 165, 32, 0.555);
+  border-radius: 5px;
+}
+
+.dateCon {
+  display: flex;
+  align-items: center;
+}
+.shortAns {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.288);
+}
+
+.resOptCon {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+.resOpt {
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.backBtn {
+  cursor: pointer;
+  display: flex;
+  width: 2rem;
+  margin-bottom: 5px;
+  align-items: center;
+  height: 2rem;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.arrowsCon {
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+}

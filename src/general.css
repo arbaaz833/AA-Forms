@@ -1,0 +1,19 @@
+:root {
+  --grey: #60605f;
+  --black: #070707;
+  --brown: #533d2b;
+  --white: #f9f9f9;
+  --grey2: #979697;
+  --dust: #c8aaa0;
+  --brown2: #926d57;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #070707e8;
+  margin: 0;
+  padding: 0;
+}

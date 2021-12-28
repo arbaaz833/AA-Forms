@@ -1,0 +1,119 @@
+.sideBar {
+  position: fixed;
+  top: 8vh;
+  border-radius: 5px 15px;
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.formList {
+  text-decoration: none;
+  margin: 3px 0px;
+  display: flex;
+  width: 87%;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  transition: background-color 150ms ease-in-out;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.formList:hover {
+  background-color: rgba(128, 128, 128, 0.671);
+}
+
+.resForm {
+  position: relative;
+  left: 22vw;
+  top: 50vh;
+  max-width: 70vw;
+  font-size: 2rem;
+  height: auto;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.optBtnCon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 22vw;
+  width: 70vw;
+}
+
+.prevOpt {
+  background-color: #f9f9f9;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 25vw;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 200ms ease-in-out;
+}
+
+.prevOpt:hover {
+  background-color: rgb(131, 128, 128);
+  border: none;
+  color: white;
+}
+
+.shareIcon {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 150ms ease-in-out;
+}
+
+.shareIcon:hover {
+  background-color: rgba(128, 128, 128, 0.671);
+}
+
+.linkInput {
+  width: 90%;
+  height: 1.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid;
+  margin: auto;
+}
+
+.addFormBtn {
+  padding: 10px;
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageLoading {
+  margin-left: 50vw;
+  margin-top: 50vh;
+}
+
+.existBtn {
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  width: 5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}

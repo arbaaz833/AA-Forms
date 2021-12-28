@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --almond: #f5f0e1;
+  --input: #ffffff;
+  --bg: #021525;
+  --questionbg: #9796977a;
+  --formbg: #c6d0da36;
+}
+
+.dynForm {
+  background-color: #c6d0da36;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10vh;
+  width: 55%;
+  min-width: 400px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.question {
+  background-color: #9796977a;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+
+.question input[type="text"] {
+  padding: 5px;
+  width: 50%;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 3px 0px;
+}
+
+.question textarea,
+.dynForm textarea {
+  resize: none;
+  padding: 3px;
+  width: 50%;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 3px 0px;
+}
+
+.questionField {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconBtn {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+
+.questionField select {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+.questionField select option {
+  padding: 5px;
+  margin: 2px 0px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.addQues {
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formError {
+  position: fixed;
+  top: 35vh;
+  left: 30vw;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 40vw;
+  border-radius: 7px;
+  height: 20vh;
+  background-color: #ffffff;
+  text-align: center;
+}
+.shadow {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.submitDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn {
+  background-color: #ffffff;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 40%;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+.buttonLoading {
+  margin: auto;
+}

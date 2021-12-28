@@ -206,7 +206,7 @@ export default function MyFormsLayout() {
 
   function setLink(id) {
     let link = "";
-    let string = "http://localhost:3000/renderForm?formId=";
+    let string = "https://aa-survey-form.web.app/renderForm?formId=";
     if (!currform.signin) {
       link = string + id + "&id=" + `${auth.currentUser.uid}` + "&rsi=f";
     } else link = string + id + "&id=" + `${auth.currentUser.uid}`;

@@ -26,7 +26,7 @@ export function SignUp() {
 
         await createUser(email, password, name);
         await auth.currentUser.sendEmailVerification({
-          url: "http://localhost:3000/myForms",
+          url: "https://aa-survey-form.web.app/auth/signin",
           handleCodeInApp: false,
         });
         setLoading(false);
@@ -55,9 +55,7 @@ export function SignUp() {
   return (
     <>
       {!online ? (
-        <OfflineModal
-          errorMessage={"Please Check Your Connection You Are Offline!"}
-        />
+        <OfflineModal errorMessage={"Please Check Your Connection You Are Offline!"} />
       ) : (
         <form
           onSubmit={(e) => {
@@ -68,45 +66,23 @@ export function SignUp() {
           <h2>Sign Up</h2>
           <hr />
           <h3>Name</h3>
-          <input
-            type="text"
-            required={true}
-            value={name}
-            onChange={handleNChange}
-          />
+          <input type="text" required={true} value={name} onChange={handleNChange} />
 
           <h3>Email</h3>
-          <input
-            type="email"
-            required={true}
-            value={email}
-            onChange={handleEChange}
-          />
+          <input type="email" required={true} value={email} onChange={handleEChange} />
 
           <h3>Password</h3>
-          <input
-            required={true}
-            id="userPassword"
-            type="password"
-            value={password}
-            onChange={handlePChange}
-          />
+          <input required={true} id="userPassword" type="password" value={password} onChange={handlePChange} />
           <br />
           <button className="btn" type={loading ? null : "submit"}>
             {loading ? (
-              <ReactLoading
-                style={{ margin: "auto", height: "24px", width: "24px" }}
-                type="spin"
-                color="#000000"
-              />
+              <ReactLoading style={{ margin: "auto", height: "24px", width: "24px" }} type="spin" color="#000000" />
             ) : (
               <div>Sign Up</div>
             )}
           </button>
           {loading ? null : id ? (
-            <Link to={`/auth/signin?formId=${formId}&id=${id}`}>
-              Already Have An Account? SignIn.
-            </Link>
+            <Link to={`/auth/signin?formId=${formId}&id=${id}`}>Already Have An Account? SignIn.</Link>
           ) : (
             <Link to="/auth/signin">Already Have An Account? SignIn.</Link>
           )}
